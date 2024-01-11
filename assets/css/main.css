@@ -1,0 +1,331 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+header .travelNav {
+  display: flex;
+  align-items: center;
+  min-height: 100px;
+  width: 100%;
+  background: transparent;
+  margin: auto;
+}
+header .travelNav img {
+  width: 130px;
+}
+header .travelNav .collapseDiv {
+  justify-content: flex-end;
+}
+header .travelNav .collapseDiv ul {
+  gap: 20px;
+  font-weight: 500;
+  font-size: 18px;
+}
+header .travelNav .collapseDiv ul .nav-link {
+  color: white;
+}
+@media (max-width: 991px) {
+  header #navbarNav {
+    background-color: white;
+  }
+  header #navbarNav ul .nav-link {
+    color: black;
+  }
+}
+
+#walking {
+  min-height: 650px;
+  background-image: url("/assets/img/amsterdam-1.jpg");
+  text-align: center;
+  display: flex;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#walking .walkingTxt {
+  color: white;
+}
+#walking .walkingTxt h1 {
+  font-size: 70px;
+  font-weight: 500;
+}
+#walking .walkingTxt h4 {
+  font-weight: 300;
+}
+#walking .walkingTxt button {
+  width: 170px;
+  height: 60px;
+  background: transparent;
+  border-color: white;
+  color: white;
+  font-weight: 500;
+}
+#walking .walkingTxt button:hover {
+  background-color: #FBCE00;
+  color: white;
+}
+@media (max-width: 600px) {
+  #walking .walkingTxt h1 {
+    font-size: 40px;
+  }
+  #walking .walkingTxt h4 {
+    font-size: 20px;
+  }
+}
+
+#tourOrganizer {
+  width: 100%;
+  min-height: 400px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+#tourOrganizer img {
+  width: 80px;
+}
+#tourOrganizer h1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+#navagio {
+  width: 100%;
+  height: auto;
+}
+#navagio .col-lg-6 {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #EFEFEF;
+}
+#navagio .col-lg-6 img {
+  width: 100%;
+  height: 600PX;
+}
+#navagio .col-lg-6 h1 {
+  font-size: 30px;
+}
+
+#popular {
+  width: 100%;
+  margin-top: 5%;
+  text-align: center;
+  min-height: 650px;
+}
+#popular .col-12 {
+  width: 400px;
+  display: flex;
+  margin: 2%;
+}
+#popular .col-12 button {
+  width: 130px;
+  height: 50px;
+  background-color: #FBCE00;
+  color: white;
+  border: none;
+}
+#popular .col-12 button:hover {
+  background-color: black;
+  color: white;
+  border: none;
+}
+#popular #product {
+  margin: 3%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  font-weight: 600;
+  color: rgb(157, 157, 157);
+  flex-wrap: wrap;
+}
+#popular #product .boxs {
+  width: 250px;
+  flex-wrap: wrap;
+}
+#popular #product .divz {
+  width: 100%;
+}
+#popular #product .divz button {
+  width: 100px;
+  height: 50px;
+  background-color: #FBCE00;
+  color: white;
+  border: none;
+  margin-bottom: 10px;
+}
+#popular #product .divz button:hover {
+  background-color: black;
+  color: white;
+}
+#popular #product .divz img {
+  width: 100%;
+  height: auto;
+}
+#popular #product .divz .divc {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#popular #load {
+  width: 130px;
+  height: 50px;
+  background-color: #FBCE00;
+  color: white;
+  border: none;
+  margin: 3%;
+}
+#popular #load:hover {
+  background-color: black;
+  color: white;
+}
+
+#discover {
+  width: 100%;
+  margin-top: 5%;
+  min-height: 650px;
+  background-image: url("/assets/img/amsterdam-1.jpg");
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#discover .discoverTxt {
+  color: white;
+  text-align: center;
+}
+#discover .form {
+  width: 100%;
+  height: 400px;
+  background-color: #FBCE00;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  bottom: 0;
+}
+#discover .form h1 {
+  font-size: 25px;
+  font-weight: 500;
+}
+#discover .form #form1 {
+  width: 80%;
+  margin: auto;
+}
+#discover .form #form1 .form-group input {
+  border: none;
+  background-color: #e6e6e6;
+}
+#discover .form #form1 .form-group textarea {
+  border: none;
+  background-color: #e6e6e6;
+}
+#discover .form #form1 button {
+  width: 160px;
+  height: 40px;
+  border: none;
+  background-color: blue;
+  font-size: 14px;
+  color: white;
+}
+
+#newsOn {
+  width: 100%;
+  min-height: 650px;
+  margin-top: 5%;
+}
+#newsOn .container {
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#newsOn .container button {
+  width: 160px;
+  height: auto;
+  border: none;
+  background-color: #FBCE00;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+#newsOn .newsCard {
+  margin-top: 2%;
+}
+#newsOn .newsCard .col-lg-4 img {
+  width: 100%;
+}
+#newsOn .newsCard .col-lg-4 h1 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  width: 100%;
+  min-height: 150px;
+  padding-top: 20px;
+}
+
+#productz {
+  margin-top: 3%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  height: auto;
+  font-weight: 600;
+  color: rgb(157, 157, 157);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#productz .divz {
+  width: 100%;
+}
+#productz .divz img {
+  width: 220px;
+}
+#productz .divz .divc {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#productz .divz button {
+  width: 130px;
+  height: 50px;
+  background-color: #FBCE00;
+  color: white;
+  border: none;
+  margin: 3%;
+}
+#productz .divz button:hover {
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 772px) {
+  #disp {
+    display: none;
+  }
+  header .sellingNav {
+    display: none;
+  }
+  #ourProducts .col-12 {
+    flex-wrap: wrap;
+  }
+  #navagio .col-lg-6 img {
+    height: auto;
+  }
+}
